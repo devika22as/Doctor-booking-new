@@ -5,9 +5,8 @@ const getHospitals = async (req, res) => {
   res.status(200).json({ message: 'success', data: hospitals });
 };
 const postHospitals = async (req, res) => {
-//   const { originalname } = req.file;
   const body = req.body;
-console.log(body)
+  console.log(body);
   const hospitals = await Hospitals.create(body);
 
   res.status(201).json({ message: 'success', data: hospitals });
