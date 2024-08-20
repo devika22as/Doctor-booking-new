@@ -1,0 +1,92 @@
+.loginMain_page
+{
+  background-image: url("../../assets/doc2.jpg");
+  height: 100vh;
+  position: relative;
+  background-repeat: no-repeat;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  background-size: 100% 100%;
+}
+
+.doc_login_form {
+  position: absolute; 
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  background-color: #f0f0f0;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 15px 15px 15px 15px rgb(2 9 20 / 10%);
+  width: 400px;
+}
+.doc_login_form h1 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.login_btnDiv {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.login_btnDiv .ant-btn {
+  background-color: #067928;
+  color: white;
+  width: 100%;
+  border: none;
+  padding: 20px;
+}
+.login_btnDiv .ant-btn-default:not(:disabled):not(.ant-btn-disabled):hover
+{
+  background-color: rgb(2, 46, 2);
+  color: white;
+}
+
+
+.inputClasses {
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 10px;
+}
+/* .ant-input-password-icon {
+  right: 10px;
+} */
+.check_rem
+{
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+.rem_frgt
+{
+  display: flex;
+  justify-content: space-between;
+}
+.frgtPass p
+{
+  color: #1677FF;
+}
+.doc_login_form p
+{
+  text-align: center;
+}
+
+.signup-text {
+  color: #1677FF; 
+  cursor: pointer; 
+  text-decoration: underline;
+}
+
+.signup-text:hover {
+  text-decoration: underline; 
+}
+.rem_frgt p{
+  font-size: 12px;
+}
+.passIcon
+{
+  position: absolute;
+  top: 52%;
+  right: 12%;
+}

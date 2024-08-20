@@ -1,12 +1,7 @@
 const Hospitals = require('../db/models/hospital-schema');
 
-// const getHospitals = async (req, res) => {
-//   const hospitals = await Hospitals.find();
-//   res.status(200).json({ message: 'success', data: hospitals });
-// };
-
 const getHospitals = async (req, res) => {
- 
+  try {
     const { departmentId } = req.query;
     let hospitals;
 
@@ -17,27 +12,23 @@ const getHospitals = async (req, res) => {
     }
 
     res.status(200).json({ message: 'success', data: hospitals });
-  
+  } catch (e) {
+    res.status(400).json(e);
+  }
 };
-
-// const getHospitalsByDepartmentId = async (req, res) => {
-//   const { departmentId } = req.params;
-
-//   if (!departmentId) {
-//     return res.status(400).json({ message: 'error', error: 'Department ID is required' });
-//   }
-//   const hospitals = await Hospitals.find({ departments: departmentId });
-//   res.status(200).json({ message: 'success', data: hospitals });
-// };
 const postHospitals = async (req, res) => {
-  const body = req.body;
-  const { originalname } = req.file;
-  console.log(req.file);
-  body.image = `http://localhost:${process.env.PORT}/uploads/${originalname}`;
+  try {
+    const body = req.body;
+    const { originalname } = req.file;
+    console.log(req.file);
+    body.image = `http://localhost:${process.env.PORT}/uploads/${originalname}`;
 
-  const hospitals = await Hospitals.create(body);
-
-  res.status(201).json({ message: 'success', data: hospitals });
+    const hospitals = await Hospitals.create(body);
+console.log(hospitals)
+    res.status(201).json({ message: 'success', data: hospitals });
+  } catch (e) {
+    res.status(400).json(e);
+  }
 };
 
 module.exports = { getHospitals, postHospitals };

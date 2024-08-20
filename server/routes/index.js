@@ -19,4 +19,5 @@ router.use('/slots',slotsRoutes)
 
 
 
+
 module.exports= router;

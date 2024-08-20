@@ -1,0 +1,11 @@
+.home
+{
+    display: flex;
+   
+}
+.home .home-container
+{
+    padding: 30px;
+    flex: 1;
+
+}

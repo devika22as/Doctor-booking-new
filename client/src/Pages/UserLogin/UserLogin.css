@@ -1,0 +1,75 @@
+.userLogin_main {
+  position: relative;
+  height: 100vh;
+  background-image: url('../../assets/patient_banner.jpg');
+  background-size: 100% 100%;
+}
+.user_login_form {
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  background-color: #f0f0f0;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 15px 15px 15px 15px rgb(2 9 20 / 10%);
+  width: 400px;
+}
+.user_login_form h1 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.user_login_btnDiv {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.user_login_btnDiv .ant-btn {
+  background-color: #3B2C67;
+  color: white;
+  width: 100%;
+  border: none;
+  padding: 20px;
+}
+.user_login_btnDiv
+  .ant-btn-default:not(:disabled):not(.ant-btn-disabled):hover {
+  background-color: #5F4E94;
+  color: white;
+}
+.input_classes {
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 10px;
+}
+.check_rem {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+.rem_frgt {
+  display: flex;
+  justify-content: space-between;
+}
+.frgtPass p {
+  color: #1677ff;
+}
+.user_login_form p {
+  text-align: center;
+}
+
+.signup-text {
+  color: #1677ff;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.signup-text:hover {
+  text-decoration: underline;
+}
+.rem_frgt p {
+  font-size: 12px;
+}
+.passIcon {
+  position: absolute;
+  top: 52%;
+  right: 12%;
+}
