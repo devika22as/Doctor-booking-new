@@ -1,6 +1,6 @@
 .loginMain_page
 {
-  background-image: url("../../assets/doc2.jpg");
+  background-image: url("../../assets/doctornewimage.jpg");
   height: 100vh;
   position: relative;
   background-repeat: no-repeat;
@@ -13,7 +13,7 @@
 .doc_login_form {
   position: absolute; 
   top: 50%;
-  left: 30%;
+  left: 20%;
   transform: translate(-50%, -50%);
   background-color: #f0f0f0;
   padding: 30px;
@@ -31,7 +31,7 @@
   margin-bottom: 10px;
 }
 .login_btnDiv .ant-btn {
-  background-color: #067928;
+  background-color: rgb(0,40,76);
   color: white;
   width: 100%;
   border: none;
@@ -39,7 +39,7 @@
 }
 .login_btnDiv .ant-btn-default:not(:disabled):not(.ant-btn-disabled):hover
 {
-  background-color: rgb(2, 46, 2);
+  background-color: rgb(0,40,76);
   color: white;
 }
 

@@ -1,13 +1,13 @@
 .userLogin_main {
   position: relative;
   height: 100vh;
-  background-image: url('../../assets/patient_banner.jpg');
+  background-image: url('../../assets/patient2.jpg');
   background-size: 100% 100%;
 }
 .user_login_form {
   position: absolute;
   top: 50%;
-  left: 70%;
+  left: 87%;
   transform: translate(-50%, -50%);
   background-color: #f0f0f0;
   padding: 30px;
@@ -24,7 +24,7 @@
   margin-bottom: 10px;
 }
 .user_login_btnDiv .ant-btn {
-  background-color: #3B2C67;
+  background-color: rgb(56,65,36);
   color: white;
   width: 100%;
   border: none;
@@ -32,7 +32,7 @@
 }
 .user_login_btnDiv
   .ant-btn-default:not(:disabled):not(.ant-btn-disabled):hover {
-  background-color: #5F4E94;
+  background-color: rgb(14, 20, 2);
   color: white;
 }
 .input_classes {

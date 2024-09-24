@@ -3,6 +3,7 @@ import axios from '../../utils/axios';
 import html2pdf from 'html2pdf.js';
 import Sidebar from '../../components/Sidebar/Sidebar';
 
+
 const DocHome = () => {
   const pdfDownloadClick = async () => {
     const response = await axios.get('/department/pdf');
